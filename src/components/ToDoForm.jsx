@@ -46,9 +46,6 @@ export default class TaskInput extends Component {
                         <Button variant="outline-secondary" type="submit">Add</Button>
                     </InputGroup.Append>
                 </InputGroup>
-                <input type="checkbox" value="complete" checked={this.state.complete} onChange={this.onCompleteChange} />
-                <label htmlfor="complete"><small>Complete</small></label>
-
             </form >
         )
     }
