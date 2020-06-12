@@ -65,7 +65,7 @@ class App extends React.Component {
                 {this.state.todos.map((todo, index) => {
                   return (
                     <div className="ml-3">{(todo.complete) ? (undefined) :
-                      (<div><button className="btn btn-outline-success btn-sm mr-2" id={index} onClick={this.handleClick}>✔️</button>{todo.name}</div>)
+                      (<div><button className="btn btn-outline-success btn-sm mr-2" id={index} onClick={this.handleClick}>✔️</button><button className="btn btn-outline-danger btn-sm mr-2" id={index} onClick={this.deleteItem}>❌</button>{todo.name}</div>)
                     }</div>
                   )
                 })
